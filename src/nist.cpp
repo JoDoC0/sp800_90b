@@ -50,6 +50,7 @@ data_t construct_data_t(
     data.word_size = bits_per_word;
 
     // check bits per word with the actual symbols
+	printf("The bits per words is %d",data.word_size)
 	byte datamask = 0;
 	byte curbit = 0x80;
 
