@@ -81,6 +81,7 @@ data_t construct_data_t(
 
     ////////////////////////////////////////////////////
     // init max symbols and create symbol map down table
+	printf("The symbols are %c", data.symbols);
 	data.maxsymbol = 0;
 	int max_symbols = 1 << data.word_size;
 	int symbol_map_down_table[max_symbols];
