@@ -28,7 +28,7 @@ private:
     Data(data_t data) : Data(data, Stats(data)) {}
 
 public:
-    Data(py::bytes samples, int bits_per_symbol = 8, bool truncate = false);
+    Data(py::bytes samples, int bits_per_symbol = 1, bool truncate = false);
     ~Data() { free_data(&data); }
 
 
