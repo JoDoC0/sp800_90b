@@ -14,7 +14,7 @@ PYBIND11_MODULE(sp800_90b, m) {
         .def(
             py::init<py::bytes, int, bool>(),
             "Constructs entropy assessment sample data.",
-            "samples"_a, "bits_per_symbol"_a = 8, "truncate"_a = false
+            "samples"_a, "bits_per_symbol"_a = 1, "truncate"_a = false
         )
 
         .def_readonly("is_binary", &Data::is_binary, "Whether the data only consisty of two different symbols.")
